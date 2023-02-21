@@ -1,0 +1,11 @@
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/DAL/NoteDAL.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/controllers/NoteServlet.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/models/Note.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/business/NoteBusiness.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/controllers/AuthServlet.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/DAL/Database.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/controllers/UserServlet.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/business/Validation.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/DAL/UserDAL.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/business/UserBusiness.java
+/home/is2m/Documents/Intellij/web001/src/main/java/estm/dsic/models/User.java
