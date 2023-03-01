@@ -12,16 +12,13 @@
 <body>
 <%@include file="../Components/nav.jsp" %>
 <%! String[] colors = new String[]{"blue", "yellow", "green", "brown", "purple", "orange", "amber"}; %>
-<% if (currentUser == null) {
-//    request.getRequestDispatcher(request.getContextPath()+"/authServlet?op=logout").forward(request,response);
-} else {%>
+<%--<% if (currentUser != null) {%>--%>
 
 
 <div class="container bootstrap snippets bootdeys ">
     <div class="row">
 
-        <% assert currentUser != null;
-            if (currentUser.getNotes() != null) {
+        <% if (currentUser!=null && currentUser.getNotes() != null) {
                 for (Note n : currentUser.getNotes()) {%>
         <div class="col-md-4 col-sm-6 content-card">
             <div class="card-big-shadow">
@@ -52,6 +49,6 @@
     </div>
 </div>
 
-<%}%>
+<%--<%}%>--%>
 </body>
 </html>

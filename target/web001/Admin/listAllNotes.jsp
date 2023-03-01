@@ -22,9 +22,8 @@
 <div class="container bootstrap snippets bootdeys ">
     <div class="row">
 
-        <% assert currentUser != null;
-            if (currentUser.getNotes() != null) {
-                for (Note n : currentUser.getNotes()) {%>
+        <% if (currentUser != null && currentUser.getNotes() != null) {
+            for (Note n : currentUser.getNotes()) {%>
         <div class="col-md-4 col-sm-6 content-card">
             <div class="card-big-shadow">
                 <div class="card card-just-text" data-background="color"

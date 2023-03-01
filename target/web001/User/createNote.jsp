@@ -1,5 +1,4 @@
 <%@ page import="estm.dsic.models.Note" %>
-<%@ page import="java.util.Enumeration" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -10,8 +9,10 @@
 <%@include file="../Components/nav.jsp" %>
 <%
     Note note = (Note) session.getAttribute("note");
-    if (currentUser == null) response.sendRedirect(request.getContextPath() + "/Auth/auth.jsp");
-    else {
+
+//    if (currentUser == null) response.sendRedirect(request.getContextPath() + "/Auth/auth.jsp");
+
+//    else {
 %>
 <div class="jumbotron d-flex align-items-center min-vh-100 ">
     <div class="container w-50 p-5 m-auto border shadow-sm">
@@ -45,4 +46,4 @@
 
 </body>
 </html>
-<%}%>
+<%--<%}%>--%>

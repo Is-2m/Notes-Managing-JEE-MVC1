@@ -1,12 +1,9 @@
 <%@ page import="estm.dsic.models.User" %>
 <% User currentUser = (User) session.getAttribute("currentUser");
     if (currentUser == null) {
-        if (response.isCommitted()) {
-            request.getRequestDispatcher(request.getContextPath() + "/authServlet?op=logout").forward(request, response);
-        } else {
-            response.sendRedirect(request.getContextPath() + "/authServlet?op=logout");
-        }
-    } else {%>
+            request.getRequestDispatcher("/authServlet?op=logout").forward(request, response);
+    } else {
+%>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 mb-3  ">
     <div class="container-fluid">
         <a class="navbar-brand"

@@ -14,7 +14,7 @@
 <%
     User currentUser = (User) session.getAttribute("currentUser");
     if (currentUser != null) {
-        response.sendRedirect(request.getContextPath() + (currentUser.isAdmin() ? "Admin" : "User") + "/index.jsp");
+        response.sendRedirect(request.getContextPath() + (currentUser.isAdmin() ? "/Admin" : "/User") + "/index.jsp");
     } else {%>
 <div class="jumbotron d-flex align-items-center min-vh-100">
     <div class="container w-50 m-auto shadow-lg p-5">

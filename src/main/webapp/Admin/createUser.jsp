@@ -23,7 +23,9 @@
 </head>
 <body>
 <%@include file="../Components/nav.jsp" %>
-<% User userToEdit = (User) session.getAttribute("userToEdit");
+<%
+    if (currentUser != null || currentUser.isAdmin()) {
+        User userToEdit = (User) session.getAttribute("userToEdit");
 %>
 <div class="jumbotron d-flex align-items-center min-vh-100 ">
     <div class="container w-50 p-5 m-auto border shadow-sm">
@@ -89,5 +91,6 @@
     </div>
 </div>
 
+<% } %>
 </body>
 </html>

@@ -41,7 +41,7 @@ public class NoteServlet extends HttpServlet {
         }
         if (operation.equals("edit") && noteid != -1) {
             session.setAttribute("note", new NoteBusiness().getNote(noteid));
-            response.sendRedirect((currentUser.isAdmin() ? "Admin" : "User") + "/createNote.jsp");
+            response.sendRedirect((currentUser.isAdmin() ? "/Admin" : "/User") + "/createNote.jsp");
         }
     }
 
@@ -72,7 +72,7 @@ public class NoteServlet extends HttpServlet {
                     session.setAttribute("counter", ++counter);
                     currentUser.setNotes(noteB.getNotes(currentUser.getId()));
                     session.setAttribute("currentUser", currentUser);
-                    response.sendRedirect((currentUser.isAdmin() ? "Admin" : "User") + "/listAllNotes.jsp");
+                    response.sendRedirect((currentUser.isAdmin() ? "/Admin" : "/User") + "/listAllNotes.jsp");
 //            request.getRequestDispatcher("User/listAllNotes.jsp").forward(request, response);
                 } else {
                     System.out.println("Error NoteServlet doPost: creating note");
@@ -84,7 +84,7 @@ public class NoteServlet extends HttpServlet {
                 session.setAttribute("currentUser", currentUser);
                 session.setAttribute("note", null);
 
-                response.sendRedirect((currentUser.isAdmin() ? "Admin" : "User") + "/index.jsp");
+                response.sendRedirect((currentUser.isAdmin() ? "/Admin" : "/User") + "/index.jsp");
 
             }
         }
