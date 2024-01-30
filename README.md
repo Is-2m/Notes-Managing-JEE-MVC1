@@ -27,17 +27,9 @@ The Notes Managing Web App is a Java EE (JEE) based web application designed for
 2. Create new notes, update existing ones, or delete unnecessary ones.
 3. View and manage your notes through an intuitive user interface.
 
-//## Screenshots
-
-//Include screenshots showcasing the user interface and various features of the application.
-
 ## Known Issues
 
 - Document any known issues or limitations in the application.
-
-// ## License
-
-// This project is licensed under the [MIT License](LICENSE).
 
 Feel free to explore and modify the code to suit your needs.
 
